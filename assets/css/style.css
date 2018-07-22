@@ -35,7 +35,7 @@ header {
 }
 
 .container {
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     border: solid 1px #cccccc;
     padding:30px;
@@ -45,6 +45,7 @@ header {
     margin-right: auto;
     width:  900px;
     background-color: #ffffff;
+    
 }
 
 p {
@@ -103,10 +104,21 @@ h2 {
     padding-bottom: 20px;
     text-align: left;
 }
+h4 {
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 18px;
+}
 
 a {
     color: #cccccc;
     text-decoration: none;
+}
+a:hover {
+    color: black;
 }
 
 ul li {
@@ -154,6 +166,26 @@ input[type=submit]:hover {
 form {
     padding-top: 30px;
 }
+section.connectme {
+    padding: 10px;
+    text-align: center;
+}
+i {
+    width: 80px;
+    margin: 5px;
+    font-size: 80px;
+}
+a.linkd {
+    color: blue;
+}
+
+a.sover {
+    color: orange;
+}
+
+a.insta, a.gsquare {
+    color: black;
+}
 
 @media screen and (max-width: 980px) {
     
@@ -196,7 +228,7 @@ form {
         width: 259px;
         padding-bottom: 10px;
     }
-    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5 {
+    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8 {
         height: 275px;
         width: 275px;
     }
@@ -242,7 +274,7 @@ form {
         height: 500px;
         width: 500px;
     }
-    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5 {
+    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8 {
         height: 500px;
         width: 500px;
     }

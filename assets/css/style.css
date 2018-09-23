@@ -1,7 +1,38 @@
-body {
-    background-image: url(../images/spiration-light.png); 
+body.about {
+    background-image: url("https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14293_hires.jpg"); 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    animation: animatedBackground 40s linear infinite;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+body.portfolio {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/aa/Sunset_over_Western_South_America.jpg"); 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animatedBackground 100s linear infinite;
+}
+
+body.contact {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_Large_Array%2C_2012.jpg/1600px-Very_Large_Array%2C_2012.jpg"); 
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    /* text-shadow: 2px 2px black; */
+    animation: animatedBackground 30s linear infinite;
 }
 
 .nav-btn-border {
@@ -20,6 +51,8 @@ header {
     border-color: #cccccc;
     padding: 0;
     background: #ffffff;
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/20/18/35/sunrise-1756274_960_720.jpg");
+    background-size: cover;
 }
 
 .thumbnail { 
@@ -44,10 +77,16 @@ header {
     margin-left: auto;
     margin-right: auto;
     width:  900px;
-    background-color: #ffffff;
+    background-color: #ffffff27;
     
 }
-
+body.contact .container {
+    background-color: #ffffff91;
+    color: black;
+}
+body.contact h2{
+    color: black;
+}
 p {
     padding-top: 20px;
     line-height: 2;
@@ -69,9 +108,9 @@ footer, #pfoot {
     width: 100%;
     border-top: solid;
     border-top-width: 5px;
-    border-top-color: #4aaaa5;
+    border-top-color: #547ea6;
     padding: 20px;
-    background: #666666;
+    background: #666666e3;
 }
 
 #pfoot {
@@ -87,6 +126,9 @@ h1, h2 {
     font-size: 36px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.contact h4 {
+    color: black;
+}
 
 .imgtag {
     bottom: 20px;
@@ -94,13 +136,14 @@ h1, h2 {
     font-size: 30px;
     width: 260px;
     padding: 20px;
-    background: #4aaaa5;
+    background: #547ea6;
     color: #ffffff;
     position: absolute;
 }
 
 h2 {
-    color: #4aaaa5;
+    color: #fef1cd;
+    /* color: #87d2fd; */
     padding-bottom: 20px;
     text-align: left;
 }
@@ -109,10 +152,13 @@ h4 {
     text-align: center;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
+    color: #fef1cd;
+    /* color: #87d2fd; */
     font-size: 18px;
 }
-
+.contact h4 {
+    color: black;
+}
 a {
     color: #cccccc;
     text-decoration: none;
@@ -137,7 +183,8 @@ ul li {
     text-align: center;
     padding: 20px;
     width: 19%;
-    background: #4aaaa5;
+    background: #a6695742;
+    /* background: #547ea68c; */
     color: #ffffff;
 }
 
@@ -186,6 +233,9 @@ a.sover {
 a.insta, a.gsquare {
     color: black;
 }
+a:hover {
+    color: white;
+ }
 
 @media screen and (max-width: 980px) {
     
@@ -228,7 +278,7 @@ a.insta, a.gsquare {
         width: 259px;
         padding-bottom: 10px;
     }
-    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, pimg12  {
+    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13  {
         height: 275px;
         width: 275px;
     }
@@ -274,8 +324,78 @@ a.insta, a.gsquare {
         height: 500px;
         width: 500px;
     }
-    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11 {
+    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13 {
         height: 500px;
         width: 500px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    body.about {
+        animation: animatedBackground 200s linear infinite;
+
+    }
+    .container {
+        width: 250px;
+    }
+    .contact h2 {
+        color: black;
+    }
+    .headcont {
+        position: static;
+        width: 100%;
+    }
+    input[type=text], select, textarea {
+        width: 240px;
+    }
+    #logo {
+       
+        width: 100%;
+    }
+    h2 {
+        text-align: center;
+    }
+    #bio-image {
+        height: 250px;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    header {
+        background-image: url("https://cdn.pixabay.com/photo/2016/10/20/18/35/sunrise-1756274_960_720.jpg");
+
+        border-bottom: solid 2px;
+        border-color: #cccccc;
+        height: 120px;
+        /* background: #ffffff; */
+    }
+    #nav {
+      
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: -10px;
+    }
+    ul {
+        text-align: center;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .imgtag {
+        padding: 5px;
+        width: 250px;
+    }
+    .thumbnail {
+        height: 250px;
+        width: 250px;
+    }
+    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13 {
+        border: 5px solid ;
+        /* padding: 15px; */
+        -webkit-border-image: url("https://cdn.pixabay.com/photo/2016/07/16/14/18/space-1522035_960_720.jpg") 30 round; 
+        -o-border-image: url("https://cdn.pixabay.com/photo/2016/07/16/14/18/space-1522035_960_720.jpg") 30 round; 
+        border-image: url("https://cdn.pixabay.com/photo/2016/07/16/14/18/space-1522035_960_720.jpg") 30 round;
+        height: 250px;
+        width: 250px;
     }
 }

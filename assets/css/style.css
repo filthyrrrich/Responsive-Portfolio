@@ -110,7 +110,9 @@ footer, #pfoot {
     border-top-width: 5px;
     border-top-color: #547ea6;
     padding: 20px;
-    background: #666666e3;
+    /* background: #666666e3; */
+    background-image: url("https://c.pxhere.com/photos/6f/e4/longexposure_sky_night_stars_nebula_astrophotography_nightsky-475590.jpg!d");
+
 }
 
 #pfoot {
@@ -236,7 +238,10 @@ a.insta, a.gsquare {
 a:hover {
     color: white;
  }
+ body.about footer {
+    border-top-color: #cccccc;
 
+ }
 @media screen and (max-width: 980px) {
     
     .container {

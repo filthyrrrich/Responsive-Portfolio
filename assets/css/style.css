@@ -86,7 +86,7 @@ header {
     background-image: url("https://c.pxhere.com/photos/6f/e4/longexposure_sky_night_stars_nebula_astrophotography_nightsky-475590.jpg!d");
     background-size: cover;
 }
-#pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13 {
+#pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13, #pimg14 {
     height: 300;
     width: 300;
     border-radius: 25px;
@@ -109,7 +109,7 @@ header {
     transform: scale(1.05); 
 }
 
-.container {
+.container, #freelance {
     overflow: auto;
     position: relative;
     border: solid 1px #cccccc;
@@ -118,10 +118,11 @@ header {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width:  900px;
+    width:  660px;
     background-color: #ffffff27;
     
 }
+
 body.contact .container {
     background-color: #ffffff91;
     color: black;
@@ -289,7 +290,7 @@ a:hover {
  }
 @media screen and (max-width: 980px) {
     
-    .container {
+    .container, #freelance {
         width: 680px;
     }
     .headcont {
@@ -303,7 +304,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
     
-    .container {
+    .container, #freelance {
         width: 578px;
     }
     h1 {
@@ -328,7 +329,7 @@ a:hover {
         width: 259px;
         padding-bottom: 10px;
     }
-    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13  {
+    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13, #pimg14  {
         height: 275px;
         width: 275px;
         border-radius: 25px;
@@ -336,9 +337,9 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 640px) {
+/* @media screen and (max-width: 640px) {
     
-    .container {
+    .container, #freelance {
         width: 500px;
     }
     .headcont {
@@ -376,13 +377,13 @@ a:hover {
         height: 500px;
         width: 500px;
     }
-    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13 {
+    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13, #pimg14 {
         height: 500px;
         width: 500px;
         border-radius: 25px;
 
-    }
-}
+    } */
+/* } */
 
 @media screen and (max-width: 639px) {
     body {
@@ -401,7 +402,7 @@ a:hover {
     animation: animatedBackground 200s linear infinite;
 
     }
-    .container {
+    .container, #freelance {
         width: 250px;
     }
     .contact h2 {
@@ -455,7 +456,7 @@ a:hover {
         height: 250px;
         width: 250px;
     }
-    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13 {
+    #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13, #pimg14 {
         height: 260px;
         width: 260px;
         border-radius: 22px;

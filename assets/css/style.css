@@ -1,4 +1,4 @@
-body.about {
+/* body.about {
     background-image: url("https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14293_hires.jpg"); 
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -7,14 +7,43 @@ body.about {
     background-repeat: no-repeat;
     background-position: 0px 0px;
     animation: animatedBackground 40s linear infinite;
+} */
+body {
+    background-image: url("https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14293_hires.jpg"); 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px black;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    animation: animatedBackground 60s linear infinite;
 }
-
-@keyframes animatedBackground {
+/* @keyframes animatedBackground {
 	from { background-position: 0 0; }
 	to { background-position: 100% 0; }
+} */
+
+/* body.portfolio {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/aa/Sunset_over_Western_South_America.jpg"); 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animatedBackground 100s linear infinite;
+} */
+.aboutSection {
+    /* background-image: url("https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14293_hires.jpg"); 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    animation: animatedBackground 40s linear infinite; */
 }
 
-body.portfolio {
+.workSection {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/aa/Sunset_over_Western_South_America.jpg"); 
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
@@ -23,7 +52,10 @@ body.portfolio {
     background-repeat: no-repeat;
     animation: animatedBackground 100s linear infinite;
 }
-
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
 body.contact {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Very_Large_Array%2C_2012.jpg/1600px-Very_Large_Array%2C_2012.jpg"); 
     font-family: Arial, Helvetica, sans-serif;
@@ -36,7 +68,7 @@ body.contact {
 }
 
 .nav-btn-border {
-    border-right: solid 1px #cccccc;
+    /* border-right: solid 1px #cccccc; */
     padding-right: 20px;
 }
 
@@ -54,7 +86,13 @@ header {
     background-image: url("https://c.pxhere.com/photos/6f/e4/longexposure_sky_night_stars_nebula_astrophotography_nightsky-475590.jpg!d");
     background-size: cover;
 }
+#pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13 {
+    height: 300;
+    width: 300;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 
+}
 .thumbnail { 
     margin-top: 30px;
     margin-left: -30px;
@@ -65,6 +103,10 @@ header {
     padding-top: 0;
     position: relative;
     float: left;
+    
+}
+.thumbnail:hover {
+    transform: scale(1.05); 
 }
 
 .container {
@@ -88,7 +130,7 @@ body.contact h2{
     color: black;
 }
 p {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     line-height: 2;
 }
 
@@ -97,7 +139,9 @@ p {
     width: 200px;
     height: 200px;
     margin-right: 20px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+
 } 
 
 footer, #pfoot {
@@ -121,6 +165,7 @@ footer, #pfoot {
 
 hr {
     border: 1px solid #dddddd;
+    margin-bottom: 30px;
 }
 
 h1, h2 {
@@ -286,6 +331,8 @@ a:hover {
     #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13  {
         height: 275px;
         width: 275px;
+        border-radius: 25px;
+
     }
 }
 
@@ -332,12 +379,26 @@ a:hover {
     #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13 {
         height: 500px;
         width: 500px;
+        border-radius: 25px;
+
     }
 }
 
 @media screen and (max-width: 639px) {
-    body.about {
-        animation: animatedBackground 200s linear infinite;
+    body {
+        /* animation: animatedBackground 400s linear infinite; */
+        background: black;
+
+    }
+    .aboutSection {
+    background-image: url("https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14293_hires.jpg"); 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px black;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    animation: animatedBackground 200s linear infinite;
 
     }
     .container {
@@ -395,12 +456,9 @@ a:hover {
         width: 250px;
     }
     #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7, #pimg8, #pimg9, #pimg10, #pimg11, #pimg12, #pimg13 {
-        border: 5px solid ;
-        /* padding: 15px; */
-        -webkit-border-image: url("https://cdn.pixabay.com/photo/2016/07/16/14/18/space-1522035_960_720.jpg") 30 round; 
-        -o-border-image: url("https://cdn.pixabay.com/photo/2016/07/16/14/18/space-1522035_960_720.jpg") 30 round; 
-        border-image: url("https://cdn.pixabay.com/photo/2016/07/16/14/18/space-1522035_960_720.jpg") 30 round;
-        height: 250px;
-        width: 250px;
+        height: 260px;
+        width: 260px;
+        border-radius: 22px;
+
     }
 }

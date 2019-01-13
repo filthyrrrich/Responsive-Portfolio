@@ -1,2 +1,2 @@
 # Basic-Portfolio
-Having played with bootstrap, this assignment was not too hard. I spent about 3hrs on it (mostly due to trial and error resizing hacks). It definitely showed me where sizing and div mistakes can cause problems with media queries. I know now to keep these concepts in mind when building further websites.
+Outdated portfolio made during bootcamp.
